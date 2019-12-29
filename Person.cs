@@ -10,7 +10,7 @@ using System.Threading.Tasks;
  */
 namespace COMP123_objectsAndClasses
 {
-    class Person
+    public class Person
     {
     }
 }

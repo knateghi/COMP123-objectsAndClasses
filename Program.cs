@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace COMP123_objectsAndClasses
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
         }
     }
