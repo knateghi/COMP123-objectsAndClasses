@@ -12,5 +12,68 @@ namespace COMP123_objectsAndClasses
 {
     public class Person
     {
+        //private intance variables
+        private string _name;
+        private int _age;
+        //public properties
+        public string Name { get => this._name;
+            set
+            {
+               // Console.WriteLine("name value set");
+                this._name = value;
+            }
+        }
+        /// <summary>
+        /// this is a public property for our _age field
+        /// </summary>
+        public int Age { get; set; }
+
+        /// <summary>
+        /// this is the default empty constructor for the Person
+        /// class
+        /// </summary>
+        /// 
+        // constructors===============================================
+        public Person()
+        {
+            this.Name= "Unknown name";
+        }
+        public Person(string name)
+        {
+            this.Name = name;
+        }
+
+        public Person(int age)
+        {
+            this.Age = age;
+        }
+        public Person(string name, int age)
+        {
+            this.Age = age;
+            this.Name = name;
+        }
+        //===================================================================
+
+        /// <summary>
+        ///this method outputs the _name value with "says hello" 
+        ///to the console
+        ///@method _sayHello
+        ///@return {void}
+        /// </summary>
+        public void SayHello()
+        {
+            Console.WriteLine(this.Name + " says Hello");
+        }
+
+
+        /// <summary>
+        /// this method outputs the name and the age 
+        /// </summary>
+        public void ShowAge()
+        {
+            Console.WriteLine($"{this.Name} is {this.Age} years old");
+        } 
     }
 }
+
+
